@@ -1,10 +1,13 @@
-# Orthelligent
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
-## Usage
+""" Serve model as a FastAPI application
+    Testing the Local/Cloud Endpoint
 
-```python
+    @author: Rajit. S
+"""
+
 from concurrent.futures import ThreadPoolExecutor
-
 import requests
 
 urls = {
@@ -32,4 +35,4 @@ with ThreadPoolExecutor() as executor:
             video_url="https://ik.imagekit.io/demo/sample-video.mp4",
             height_cm=185.5
         )
-```
+
